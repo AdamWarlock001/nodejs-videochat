@@ -66,9 +66,9 @@ function localDescCreated(desc) {
 /////////////////////////////////
 function getUserMedia(callback) {
   navigator.mediaDevices.getUserMedia({video: true, audio: false}).then(
-    function(stream) {
-      callback(stream);
-      return stream;
+    function(mediaStream) {
+      callback(mediaStream);
+      return mediaStream;
     }).catch(logError);
 }
 
