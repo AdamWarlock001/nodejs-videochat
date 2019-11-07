@@ -30,7 +30,7 @@ function createPeerConnection() {
 function handleIceCandidate(event) {
   console.log("handleIceCandidate event: " + event);
   if(event.candidate) {
-    //sendMessage(JSON.stringify({'candidate': evt.candidate}));
+   sendMessage(JSON.stringify({'candidate': evt.candidate}));
   } else {
     consolel.log("End of ice candidates");
   }
